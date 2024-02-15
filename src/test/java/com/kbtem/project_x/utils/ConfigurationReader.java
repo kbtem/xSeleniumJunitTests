@@ -1,4 +1,4 @@
-package com.kbtem.amazon_project.utils;
+package com.kbtem.project_x.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.kbtem.amazon_project.runners;
+package com.kbtem.project_x.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/cucumber/report.html",
                 "rerun:target/rerun.txt"},
-        glue = "com/kbtem/amazon_project/steps",
+        glue = "com/kbtem/project_x/steps",
         features = "src/test/resources/features",
         dryRun = false,
         tags = ""

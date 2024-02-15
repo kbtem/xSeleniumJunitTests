@@ -1,10 +1,10 @@
-package com.kbtem.amazon_project.steps;
+package com.kbtem.project_x.steps;
 
 import com.github.javafaker.Faker;
-import com.kbtem.amazon_project.pages.HomePage;
-import com.kbtem.amazon_project.pages.LoginPage;
-import com.kbtem.amazon_project.utils.ConfigurationReader;
-import com.kbtem.amazon_project.utils.Driver;
+import com.kbtem.project_x.pages.HomePage;
+import com.kbtem.project_x.pages.LoginPage;
+import com.kbtem.project_x.utils.ConfigurationReader;
+import com.kbtem.project_x.utils.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

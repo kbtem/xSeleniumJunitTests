@@ -1,4 +1,4 @@
-package com.kbtem.amazon_project.runners;
+package com.kbtem.project_x.runners;
 
 
 import io.cucumber.junit.Cucumber;

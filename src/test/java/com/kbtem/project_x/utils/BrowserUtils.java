@@ -1,6 +1,6 @@
-package com.kbtem.amazon_project.utils;
+package com.kbtem.project_x.utils;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.util.Set;
 
 public class BrowserUtils {

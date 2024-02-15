@@ -1,6 +1,6 @@
-package com.kbtem.amazon_project.pages;
+package com.kbtem.project_x.pages;
 
-import com.kbtem.amazon_project.utils.Driver;
+import com.kbtem.project_x.utils.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
