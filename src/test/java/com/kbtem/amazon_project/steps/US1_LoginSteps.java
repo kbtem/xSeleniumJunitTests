@@ -1,23 +1,19 @@
 package com.kbtem.amazon_project.steps;
 
 import com.kbtem.amazon_project.pages.LoginPage;
-import com.kbtem.amazon_project.utils.BrowserUtils;
 import com.kbtem.amazon_project.utils.ConfigurationReader;
 import com.kbtem.amazon_project.utils.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.logging.Log;
-import org.joda.time.Seconds;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Set;
 
-public class US1_Steps {
+public class US1_LoginSteps {
 
     LoginPage loginPage = new LoginPage();
 

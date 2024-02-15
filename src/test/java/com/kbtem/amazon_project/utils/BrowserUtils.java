@@ -28,6 +28,14 @@ public class BrowserUtils {
         return false;
     }
 
+    public static void browserSleep(long second){
+        try {
+            Thread.sleep(second*1000); // 1 Second equals 1000 millis.
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 

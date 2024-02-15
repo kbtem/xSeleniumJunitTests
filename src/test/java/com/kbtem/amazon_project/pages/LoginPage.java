@@ -1,15 +1,22 @@
 package com.kbtem.amazon_project.pages;
 
+import com.kbtem.amazon_project.utils.ConfigurationReader;
 import com.kbtem.amazon_project.utils.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage {
 
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
 
 
     @FindBy(linkText = "Create account")
@@ -58,15 +65,23 @@ public class LoginPage {
 
 
     public void login(String username, String password) {
+        Driver.getDriver().get(ConfigurationReader.getProperty("twitter.url"));
         // 1. Clicks sign in button on home page.
+        wait.until(ExpectedConditions.elementToBeClickable(signInBtn));
         signInBtn.click();
+        String loginUrl = Driver.getDriver().getCurrentUrl();
+        Driver.getDriver().get(loginUrl);
         // 2. Puts in username.
+        wait.until(ExpectedConditions.elementToBeClickable(usernameInput));
         usernameInput.sendKeys(username);
         // 3. Clicks next button.
+        wait.until(ExpectedConditions.elementToBeClickable(nextButton));
         nextButton.click();
         // 4. Puts in password.
+        wait.until(ExpectedConditions.elementToBeClickable(passwordInput));
         passwordInput.sendKeys(password);
         // 5. Clicks log in button.
+        wait.until(ExpectedConditions.elementToBeClickable(loginBtn));
         loginBtn.click();
 
     }
