@@ -20,4 +20,7 @@ public class HomePage {
     @FindBy(xpath = "//*[@id=\"react-root\"]/div/div/div[2]/main/div/div/div/div[1]/div/div[5]/div/section/div/div/div[2]/div/div/article")
     public WebElement postedTweet;
 
+    @FindBy(xpath = "//*[@id=\"react-root\"]/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div/label/div[2]/div/input")
+    public WebElement searchBox;
+
 }
